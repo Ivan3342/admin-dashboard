@@ -17,3 +17,71 @@
     box-sizing: border-box;
     border-collapse: collapse;
 }
+
+.app-wrapper {
+    display: flex;
+}
+
+.side-bar {
+    width: 15vw;
+    height: 100vh;
+    background-color: var(--charcoal);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+}
+
+.side-bar-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Inter', sans-serif;
+    color: var(--silver);
+}
+
+.logo {
+    user-select: none;
+    -webkit-user-drag: none;
+    width: 50px;
+    filter: brightness(0) saturate(100%) invert(66%) sepia(33%) saturate(3537%) hue-rotate(317deg) brightness(90%) contrast(78%);
+}
+
+.side-bar-items {
+    list-style: none;
+}
+
+.side-bar-settings {
+    list-style: none;
+}
+
+.side-bar-item {
+    padding: 5px;
+    border-radius: 7px;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 10px 0px;
+    color: var(--silver);
+    user-select: none;
+    
+    & img {
+        filter: brightness(0) saturate(100%) invert(84%) sepia(0%) saturate(0%) hue-rotate(34deg) brightness(93%) contrast(91%);
+    }
+    -webkit-user-drag: none;
+    transition: 180ms ease-out;
+}
+
+.side-bar-item:hover {
+    background-color: var(--indian-red);
+    color: var(--black);
+    & img {
+        filter: none;
+    }
+}
+
+
+.icon {
+    width: 25px;
+}
