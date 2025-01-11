@@ -306,6 +306,10 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.trending-text::before {
+    content: "@";
+}
+
 .trending-icon {
     width: 60px;
     height: 60px;
