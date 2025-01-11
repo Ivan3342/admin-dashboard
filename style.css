@@ -30,12 +30,13 @@ body {
 
 .side-bar {
     width: 15vw;
-    height:inherit;
     background-color: var(--charcoal);
     display: flex;
     flex-direction: column;
     gap: 20px;
     padding: 20px;
+    position: fixed;
+    height: 100vh;
 }
 
 .side-bar-title {
@@ -96,11 +97,15 @@ body {
 .main {
     width: 100%;
     font-family: 'Inter', sans-serif;
+    margin-left: 15vw;
 }
 
 .main-header {
-    width: 95%;
+    background-color: var(--anti-flash);
+    width: 84.8%;
     padding: 25px 40px;
+    position: fixed;
+    padding-right: 90px;
 }
 
 .top {
@@ -181,6 +186,7 @@ body {
     padding: 10px 20px;
     display: grid;
     grid-template-columns: 73% 27%;
+    margin-top: 190px;
 }
 
 .project-wrapper {
